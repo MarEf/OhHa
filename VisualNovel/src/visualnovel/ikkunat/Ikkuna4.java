@@ -5,12 +5,12 @@ package visualnovel.ikkunat;
  *
  * @author maef
  */
-public class TestiIkkuna extends Ikkuna{
-
-    public void setSivunumero(int sivunumero) {
-        this.sivunumero = sivunumero;
-    }
+public class Ikkuna4 extends Ikkuna{
     
+    public void setSivunumero() {
+        this.sivunumero = 4;
+    }
+
     @Override
     public void seuraava() {
         throw new UnsupportedOperationException("Not supported yet.");

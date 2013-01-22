@@ -12,7 +12,7 @@ public class Ikkuna1 extends Ikkuna{
     }
     
     @Override
-    public void jatka() {
+    public void seuraava() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
     

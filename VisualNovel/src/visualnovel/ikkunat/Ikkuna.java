@@ -2,7 +2,9 @@
 package visualnovel.ikkunat;
 
 import java.awt.*;
+import java.awt.image.*;
 import java.io.*;
+import javax.imageio.ImageIO;
 
 /**
  *
@@ -22,12 +24,14 @@ public abstract class Ikkuna {
         return teksti;
     }
     
-    public void haeKuva() {
+    public BufferedImage haeKuva() throws IOException {
         
-        //Tämä ei tee toistaiseksi vielä mitään.
-        //Graafisessa käyttöliittymässä tämä palauttaa tekstiin sopivan kuvan
+        BufferedImage kuva;
+        kuva = ImageIO.read(new File("src/visualnovel/ikkunat/kuvat/"+kuvanTunnus+".txt"));
+        
+        return kuva;
     }
     
-    public abstract void jatka(); //Käynnistää pelaajan valinnan perusteella seuraavan ikkunan.
+    public abstract void seuraava(); //Minne seuraavaksi voidaan siirtyä
 
 }

@@ -2,34 +2,30 @@
 package visualnovel.ikkunat;
 
 import java.io.*;
-import java.util.Scanner;
 
 /**
  *
  * @author maef
  */
 public abstract class Ikkuna {
-
-    private int sivunumero;
+    
+    protected int sivunumero;
+    protected String kuvanTunnus;
     
     public Ikkuna() {
     }
     
     public File haeTeksti() throws FileNotFoundException {
-        File teksti = new File("src/visualnovel/ikkunat/"+sivunumero+".txt");
+        File teksti = new File("src/visualnovel/ikkunat/tekstit/"+sivunumero+".txt");
         
         return teksti;
     }
     
     public void haeKuva() {
         //Tämä ei tee toistaiseksi vielä mitään.
-        //Graafisessa käyttöliittymässä tämä hakee tekstiin sopivan kuvan
-        //ja asettaa sen taustalle.
+        //Graafisessa käyttöliittymässä tämä palauttaa tekstiin sopivan kuvan
     }
     
     public abstract void jatka(); //Käynnistää pelaajan valinnan perusteella seuraavan ikkunan.
 
-    public void setSivunumero(int sivunumero) {
-        this.sivunumero = sivunumero;
-    }
 }

@@ -23,8 +23,6 @@ public class IkkunaTest {
 
     @Test(expected = FileNotFoundException.class)
     public void eiLataaTiedostoaJotaEiOle() throws FileNotFoundException{
-        TestiIkkuna ikkuna = new TestiIkkuna();
         
-        ikkuna.setSivunumero(-100);
     }
 }

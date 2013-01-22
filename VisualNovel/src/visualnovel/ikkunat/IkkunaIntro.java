@@ -7,7 +7,7 @@ package visualnovel.ikkunat;
 public class IkkunaIntro extends Ikkuna {
 
     public void setSivunumero() {
-        this.sivunumero = 1;
+        this.sivunumero = 0;
     }
     
     @Override

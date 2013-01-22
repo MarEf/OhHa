@@ -12,10 +12,7 @@ public class VisualNovel {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws FileNotFoundException {
-        Ikkuna ikkuna = new Ikkuna();
+    public static void main(String[] args) {
         
-        ikkuna.haeTeksti();
-        ikkuna.jatka();
     }
 }

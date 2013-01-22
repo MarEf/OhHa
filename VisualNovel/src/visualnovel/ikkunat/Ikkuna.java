@@ -8,25 +8,17 @@ import java.util.Scanner;
  *
  * @author maef
  */
-public class Ikkuna {
+public abstract class Ikkuna {
 
-    private int sivunumero = 0;
+    private int sivunumero;
     
     public Ikkuna() {
     }
     
-    public void haeTeksti() throws FileNotFoundException {
+    public File haeTeksti() throws FileNotFoundException {
         File teksti = new File("src/visualnovel/ikkunat/"+sivunumero+".txt");
-        try (Scanner lukija = new Scanner(teksti)) {
-            while (lukija.hasNextLine()) {
-                String rivi = lukija.nextLine();
-                System.out.println(rivi);
-            } 
-            lukija.close();
-            
-        } catch (Exception e) {
-            System.out.println("Hups... Tekstiä ei löytynyt.");
-        }
+        
+        return teksti;
     }
     
     public void haeKuva() {
@@ -35,10 +27,7 @@ public class Ikkuna {
         //ja asettaa sen taustalle.
     }
     
-    public void jatka() {
-        //Käynnistää pelaajan valinnan perusteella seuraavan ikkunan.
-        
-    }
+    public abstract void jatka(); //Käynnistää pelaajan valinnan perusteella seuraavan ikkunan.
 
     public void setSivunumero(int sivunumero) {
         this.sivunumero = sivunumero;

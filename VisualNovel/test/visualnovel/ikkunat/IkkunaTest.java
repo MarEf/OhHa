@@ -21,4 +21,13 @@ public class IkkunaTest {
     public void tekstinHakuOnnistuu() {
         
     }
+    
+    @Test
+    public void kuvanHakuOnnistuu() {
+        
+    }
+    
+    public void linkkiSeuraavalleSivulleToimii() {
+        
+    }
 }

@@ -1,10 +1,11 @@
+
 package visualnovel.ikkunat;
 
 /**
  *
  * @author maef
  */
-public class IkkunaIntro extends Ikkuna {
+public class Ikkuna1 extends Ikkuna{
 
     public void setSivunumero() {
         this.sivunumero = 1;
@@ -14,6 +15,5 @@ public class IkkunaIntro extends Ikkuna {
     public void jatka() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
-    
     
 }

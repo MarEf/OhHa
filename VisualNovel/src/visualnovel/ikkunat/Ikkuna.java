@@ -1,6 +1,7 @@
 
 package visualnovel.ikkunat;
 
+import java.awt.*;
 import java.io.*;
 
 /**
@@ -22,6 +23,7 @@ public abstract class Ikkuna {
     }
     
     public void haeKuva() {
+        
         //Tämä ei tee toistaiseksi vielä mitään.
         //Graafisessa käyttöliittymässä tämä palauttaa tekstiin sopivan kuvan
     }

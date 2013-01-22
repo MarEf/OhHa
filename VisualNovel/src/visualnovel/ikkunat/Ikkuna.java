@@ -27,7 +27,7 @@ public abstract class Ikkuna {
     public BufferedImage haeKuva() throws IOException {
         
         BufferedImage kuva;
-        kuva = ImageIO.read(new File("src/visualnovel/ikkunat/kuvat/"+kuvanTunnus+".txt"));
+        kuva = ImageIO.read(new File("src/visualnovel/ikkunat/kuvat/"+kuvanTunnus+".jpg"));
         
         return kuva;
     }

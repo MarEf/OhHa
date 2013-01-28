@@ -12,7 +12,7 @@ public class IkkunaIntro extends Ikkuna {
     
     @Override
     public void seuraava() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        String aloita = "Aloita";
     }
     
     

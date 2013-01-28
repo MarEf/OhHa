@@ -14,7 +14,7 @@ public class Ikkuna3 extends Ikkuna{
     
     @Override
     public void seuraava() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        String next = ">>";
     }
     
 }

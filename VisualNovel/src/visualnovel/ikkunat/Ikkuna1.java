@@ -13,7 +13,8 @@ public class Ikkuna1 extends Ikkuna{
     
     @Override
     public void seuraava() {
-        throw new UnsupportedOperationException("Not supported yet.");
+        String a = "1. Minä: \"Itseasiassa äiti käski mennä suoraan kotiin. Ehkä huomenna.\" (Vilkutus)";
+        String b = "2. Minä: Äiti käski mennä suoraan kotiin, mutta... \"Kuulostaa hyvältä! Mennään.\"";
     }
     
 }

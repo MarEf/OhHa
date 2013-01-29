@@ -1,6 +1,8 @@
 
 package visualnovel.ikkunat;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author maef
@@ -12,7 +14,7 @@ public class TestiIkkuna extends Ikkuna{
     }
     
     @Override
-    public void seuraava() {
+    public ArrayList<String> seuraavat() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
     

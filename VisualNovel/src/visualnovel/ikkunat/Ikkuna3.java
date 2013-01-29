@@ -1,6 +1,8 @@
 
 package visualnovel.ikkunat;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author maef
@@ -13,8 +15,12 @@ public class Ikkuna3 extends Ikkuna{
 
     
     @Override
-    public void seuraava() {
-        String next = ">>";
+    public ArrayList<String> seuraavat() {
+        ArrayList<String> next = new ArrayList<>();
+        String seuraava = ">>";
+        
+        next.add(seuraava);
+        return next;
     }
     
 }

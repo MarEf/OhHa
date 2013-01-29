@@ -4,6 +4,7 @@ package visualnovel.ikkunat;
 import java.awt.*;
 import java.awt.image.*;
 import java.io.*;
+import java.util.ArrayList;
 import javax.imageio.ImageIO;
 
 /**
@@ -32,6 +33,6 @@ public abstract class Ikkuna {
         return kuva;
     }
     
-    public abstract void seuraava(); //Minne seuraavaksi voidaan siirtyä
+    public abstract ArrayList<String> seuraavat(); //Minne seuraavaksi voidaan siirtyä
 
 }

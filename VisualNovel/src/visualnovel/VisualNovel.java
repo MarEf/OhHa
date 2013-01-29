@@ -1,6 +1,8 @@
 package visualnovel;
 
 import java.io.FileNotFoundException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 import visualnovel.ikkunat.*;
 
@@ -16,5 +18,6 @@ public class VisualNovel {
     public static void main(String[] args) {
         Kayttoliittyma kl = new Kayttoliittyma();
         SwingUtilities.invokeLater(kl);
+        
     }
 }

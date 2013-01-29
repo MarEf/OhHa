@@ -8,21 +8,21 @@ import java.util.ArrayList;
  * @author maef
  */
 public class Ikkunat {
-    private ArrayList<Ikkuna> ikkunat = new ArrayList<>();
+    private Ikkuna[][] ikkunat = new Ikkuna[5][4];
 
     public Ikkunat() {
     }
 
-    public ArrayList<Ikkuna> getIkkunat() {
+    public Ikkuna[][] getIkkunat() {
         return ikkunat;
     }
     
     public void lisaaIkkunat() {
-        ikkunat.add(new IkkunaIntro());
-        ikkunat.add(new Ikkuna1());
-        ikkunat.add(new Ikkuna2());
-        ikkunat.add(new Ikkuna3());
-        ikkunat.add(new Ikkuna4());
+        ikkunat[0][0] = new IkkunaIntro();
+        ikkunat[0][1] = new Ikkuna1();
+        ikkunat[0][2] = new Ikkuna2();
+        ikkunat[0][3] = new Ikkuna3();
+        ikkunat[0][4] = new Ikkuna4();
         
     }
 }

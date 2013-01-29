@@ -6,6 +6,7 @@ import java.awt.*;
 import java.io.FileNotFoundException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.border.Border;
 
 /**
  *
@@ -24,18 +25,15 @@ public class Kayttoliittyma implements Runnable {
         frame.setPreferredSize(new Dimension(1000, 800));
         
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        try {
+  
             luoKomponentit(frame.getContentPane());
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(Kayttoliittyma.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
+        
         frame.pack();
         frame.setVisible(true);
         
     }
     
-    private void luoKomponentit(Container container) throws FileNotFoundException {
+    private void luoKomponentit(Container container) {
         JPanel kuva = new JPanel();
         kuva.setSize(1000, 500);
         kuva.setBackground(Color.gray);
@@ -45,6 +43,12 @@ public class Kayttoliittyma implements Runnable {
         teksti.setSize(1000, 300);
         teksti.setBackground(Color.white);
         container.add(teksti);
+        
+        JTextArea tarina = new JTextArea(); //Ei jostain syystä näy...
+        tarina.setEditable(false);
+        tarina.setSize(1000, 170);
+        tarina.setBackground(Color.black);
+        teksti.add(tarina);
     }
     
     public JFrame getFrame() {

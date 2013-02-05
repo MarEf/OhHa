@@ -9,6 +9,9 @@ import java.util.Scanner;
  * @author maef
  */
 public class Tekstinkasittelija {
+
+    public Tekstinkasittelija() {
+    }
     
     public String lueTiedosto(File tiedosto) throws FileNotFoundException {
         String teksti = "";

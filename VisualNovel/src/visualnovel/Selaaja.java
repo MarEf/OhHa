@@ -7,7 +7,7 @@ import visualnovel.ikkunat.*;
  *
  * @author maef
  */
-public class Selaaja {
+public class Selaaja { //Pidetään kirjaa siitä, mitä ikkunaa ollaan parhaillaan näyttämässä.
     private int i = 0;
     private int j = 0;
     private Ikkunat ikkunat;
@@ -17,12 +17,24 @@ public class Selaaja {
         this.ikkunat = ikkunat;
         taulukko = ikkunat.getIkkunat();
     }
-    
-    public void seuraava() {
-        
+
+    public int getI() {
+        return i;
+    }
+
+    public void setI(int i) {
+        this.i = i;
+    }
+
+    public int getJ() {
+        return j;
+    }
+
+    public void setJ(int j) {
+        this.j = j;
     }
     
-    public Ikkuna palautaIkkuna(int i, int j) {
+    public Ikkuna palautaIkkuna() {
         return taulukko[i][j];
     }
     

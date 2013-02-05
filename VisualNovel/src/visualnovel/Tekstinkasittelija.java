@@ -5,7 +5,8 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
- *
+ * Palauttaa file-tiedoston sisällön String-oliona.
+ * 
  * @author maef
  */
 public class Tekstinkasittelija {

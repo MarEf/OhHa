@@ -4,7 +4,8 @@ package visualnovel.ikkunat;
 import java.util.ArrayList;
 
 /**
- *
+ * Säilöö kaikki Ikkuna-luokan toteuttavat oliot taulukkoon omille paikoilleen.
+ * 
  * @author maef
  */
 public class Ikkunat {

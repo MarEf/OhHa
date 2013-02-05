@@ -9,6 +9,8 @@ import javax.imageio.ImageIO;
 
 /**
  *
+ * Pohja luokille, jotka hakevat itseensä liittyvän kuva- ja tekstitiedoston.
+ * 
  * @author maef
  */
 public abstract class Ikkuna {

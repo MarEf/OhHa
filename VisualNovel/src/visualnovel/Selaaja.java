@@ -4,10 +4,12 @@ package visualnovel;
 import visualnovel.ikkunat.*;
 
 /**
+ * Luokka pitää kirjaa siitä, missä kohdassa tarinaa (kohdassa taulukkoa) 
+ * ollaan parhaillaan menossa.
  *
  * @author maef
  */
-public class Selaaja { //Pidetään kirjaa siitä, mitä ikkunaa ollaan parhaillaan näyttämässä.
+public class Selaaja { 
     private int i = 0;
     private int j = 0;
     private Ikkunat ikkunat;

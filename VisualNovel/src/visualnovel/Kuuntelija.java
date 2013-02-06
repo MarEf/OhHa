@@ -68,12 +68,12 @@ public class Kuuntelija implements ActionListener{
         if (seuraavat.size() == 1){
             nappi2.setEnabled(false);
             nappi1.setText(selaaja.palautaIkkuna().seuraavat().get(0));
+            nappi2.setText(" ");
         }
         if (seuraavat.size() == 2){
-            nappi2.setEnabled(true);
+            nappi2.setEnabled(false); //VALMIISSA VERSIOSSA TRUE!!!
             nappi1.setText(selaaja.palautaIkkuna().seuraavat().get(0));
             nappi2.setText(selaaja.palautaIkkuna().seuraavat().get(1));
         }
     }
-
 }

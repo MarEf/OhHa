@@ -25,7 +25,7 @@ public class Selaaja {
     }
 
     public void setI(int i) {
-        if (i>4 || taulukko[i][j] == null) {
+        if (i>5 || taulukko[i][j] == null) {
             this.i = 0;
         }
         else {
@@ -38,7 +38,7 @@ public class Selaaja {
     }
 
     public void setJ(int j) {
-        if (i>3 || taulukko[i][j] == null) {
+        if (j>4 || taulukko[i][j] == null) {
             this.j = 0;
         }
         else {

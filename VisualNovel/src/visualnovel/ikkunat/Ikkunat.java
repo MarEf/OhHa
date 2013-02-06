@@ -9,16 +9,17 @@ import java.util.ArrayList;
  * @author maef
  */
 public class Ikkunat {
-    private Ikkuna[][] ikkunat = new Ikkuna[5][4];
+    private Ikkuna[][] ikkunat = new Ikkuna[6][5];
 
     public Ikkunat() {
+        lisaaIkkunat();
     }
 
     public Ikkuna[][] getIkkunat() {
         return ikkunat;
     }
     
-    public void lisaaIkkunat() {
+    private void lisaaIkkunat() {
         ikkunat[0][0] = new IkkunaIntro();
         ikkunat[0][1] = new Ikkuna1();
         ikkunat[0][2] = new Ikkuna2();

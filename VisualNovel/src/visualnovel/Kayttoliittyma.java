@@ -49,6 +49,7 @@ public class Kayttoliittyma implements Runnable {
         
         JTextArea tarina = new JTextArea("");
         tarina.setEditable(false);
+        tarina.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 20));
         tarina.setPreferredSize(new Dimension(1000, 200));
         tarina.setBackground(Color.white);
         teksti.add(tarina);

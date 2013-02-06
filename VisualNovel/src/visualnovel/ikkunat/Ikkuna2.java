@@ -8,9 +8,9 @@ import java.util.ArrayList;
  * @author maef
  */
 public class Ikkuna2  extends Ikkuna{
-
-    public void setSivunumero() {
-        this.sivunumero = 2;
+    
+     public Ikkuna2() {
+        super(2);
     }
     
     @Override

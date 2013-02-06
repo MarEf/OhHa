@@ -9,13 +9,17 @@ import java.util.ArrayList;
  */
 public class Ikkuna4 extends Ikkuna{
     
-    public void setSivunumero() {
-        this.sivunumero = 4;
+   public Ikkuna4() {
+        super(4);
     }
 
     @Override
     public ArrayList<String> seuraavat() {
-        return null;
+        ArrayList<String> alku = new ArrayList<>();
+        String alkuun = ("Aloita alusta");
+        alku.add(alkuun);
+        
+        return alku;
     }
     
 }

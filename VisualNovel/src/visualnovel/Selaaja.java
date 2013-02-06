@@ -25,7 +25,12 @@ public class Selaaja {
     }
 
     public void setI(int i) {
-        this.i = i;
+        if (i>4 || taulukko[i][j] == null) {
+            this.i = 0;
+        }
+        else {
+            this.i = i;
+        }
     }
 
     public int getJ() {
@@ -33,7 +38,12 @@ public class Selaaja {
     }
 
     public void setJ(int j) {
-        this.j = j;
+        if (i>3 || taulukko[i][j] == null) {
+            this.j = 0;
+        }
+        else {
+            this.j = j;
+        }
     }
     
     public Ikkuna palautaIkkuna() {

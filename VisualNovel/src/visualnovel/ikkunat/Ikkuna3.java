@@ -9,8 +9,8 @@ import java.util.ArrayList;
  */
 public class Ikkuna3 extends Ikkuna{
 
-    public void setSivunumero() {
-        this.sivunumero = 3;
+    public Ikkuna3() {
+        super(3);
     }
 
     

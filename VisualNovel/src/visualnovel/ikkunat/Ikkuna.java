@@ -18,7 +18,8 @@ public abstract class Ikkuna {
     protected int sivunumero;
     protected String kuvanTunnus;
     
-    public Ikkuna() {
+    public Ikkuna(int numero) {
+        this.sivunumero = numero;
     }
     
     public File haeTeksti() throws FileNotFoundException {

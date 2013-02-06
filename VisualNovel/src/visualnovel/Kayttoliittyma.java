@@ -57,10 +57,11 @@ public class Kayttoliittyma implements Runnable {
         napit.setLayout(new BoxLayout(napit, BoxLayout.Y_AXIS));
         teksti.add(napit);
         
-        JButton nappi1 = new JButton(" ");
+        JButton nappi1 = new JButton("Aloita");
         napit.add(nappi1);
         
         JButton nappi2 = new JButton(" ");
+        nappi2.setEnabled(false);
         napit.add(nappi2);
         
         Kuuntelija kuuntelija = new Kuuntelija(nappi1, nappi2, tarina);

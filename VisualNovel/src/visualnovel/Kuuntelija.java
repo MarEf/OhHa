@@ -20,6 +20,7 @@ public class Kuuntelija implements ActionListener{
     private JTextArea tarina;
     private Selaaja selaaja = new Selaaja(new Ikkunat());
     private boolean goodEnd = false;
+    
 
     public Kuuntelija(JButton nappi1, JButton nappi2, JTextArea tarina) {
         this.nappi1 = nappi1;
@@ -47,7 +48,32 @@ public class Kuuntelija implements ActionListener{
                 selaaja.setJ(selaaja.getJ()+1);
             }
         }
+        
+        vaihdaIkkunaa();
 
+    }
+
+    private void vaihdaIkkunaa() {
+        
+        Ikkuna ikkuna = selaaja.palautaIkkuna();
+        Tekstinkasittelija kasittelija = new Tekstinkasittelija();
+        
+        try {
+        tarina.setText(kasittelija.lueTiedosto(ikkuna.haeTeksti()));
+            } catch(Exception e) {
+            }
+        
+        ArrayList<String> seuraavat = ikkuna.seuraavat();
+        
+        if (seuraavat.size() == 1){
+            nappi2.setEnabled(false);
+            nappi1.setText(selaaja.palautaIkkuna().seuraavat().get(0));
+        }
+        if (seuraavat.size() == 2){
+            nappi2.setEnabled(true);
+            nappi1.setText(selaaja.palautaIkkuna().seuraavat().get(0));
+            nappi2.setText(selaaja.palautaIkkuna().seuraavat().get(1));
+        }
     }
 
 }

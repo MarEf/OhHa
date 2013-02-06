@@ -8,8 +8,8 @@ import java.util.ArrayList;
  */
 public class IkkunaIntro extends Ikkuna {
 
-    public void setSivunumero() {
-        this.sivunumero = 0;
+    public IkkunaIntro() {
+        super(0);
     }
     
     @Override
@@ -20,6 +20,5 @@ public class IkkunaIntro extends Ikkuna {
         next.add(aloita);
         return next;
     }
-    
     
 }

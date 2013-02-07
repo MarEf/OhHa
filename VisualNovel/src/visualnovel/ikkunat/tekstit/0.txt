@@ -1,6 +1,5 @@
-Jatkaaksesi eteenpäin, paina >>nuolien jälkeen
-olevaa tekstiä. Valitse tekosi kuitenkin harkiten,
-sillä jokainen valintasi vaikuttaa lopputulokseen.
+Jatkaaksesi eteenpäin, paina haluamaasi nappia. Valitse tekosi kuitenkin 
+harkiten,sillä jokainen valintasi vaikuttaa lopputulokseen.
 
 Ai niin... ja yritä pitää hauskaa!
 

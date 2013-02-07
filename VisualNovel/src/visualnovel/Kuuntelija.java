@@ -53,7 +53,7 @@ public class Kuuntelija implements ActionListener{
 
     }
 
-    private void vaihdaIkkunaa() {
+    public void vaihdaIkkunaa() {
         
         Ikkuna ikkuna = selaaja.palautaIkkuna();
         Tekstinkasittelija kasittelija = new Tekstinkasittelija();

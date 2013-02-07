@@ -1,13 +1,3 @@
-Tervetuloa
-
-Eteesi aukeaa tekstiä ja kuvia, jotka
-kertovat tarinaa eteenpäin pala palalta.
-Vuorosanat on kirjoitettu "lainausmerkkien"
-sisään, ja tekeminen on kirjoitettu
-(sulkuihin). Ajattelua kuvaavaa tekstiä
-ei ole laitettu minkään merkkiparin
-sisään.
-
 Jatkaaksesi eteenpäin, paina >>nuolien jälkeen
 olevaa tekstiä. Valitse tekosi kuitenkin harkiten,
 sillä jokainen valintasi vaikuttaa lopputulokseen.

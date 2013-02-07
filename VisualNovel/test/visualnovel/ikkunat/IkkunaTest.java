@@ -3,6 +3,8 @@ package visualnovel.ikkunat;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -21,8 +23,16 @@ public class IkkunaTest {
 
     
 
-    @Test(expected = FileNotFoundException.class)
-    public void eiLataaTiedostoaJotaEiOle() throws FileNotFoundException{
+    @Test
+    public void eiLataaTiedostoaJotaEiOle(){
+        Ikkuna ikkuna = new TestiIkkuna();
+        File tiedosto;
+        try {
+            tiedosto = ikkuna.haeTeksti();
+        } catch (FileNotFoundException ex) {
+            tiedosto = null;
+        }
         
+        assertEquals(null, tiedosto);
     }
 }

@@ -23,7 +23,7 @@ public class Kayttoliittyma implements Runnable {
     @Override
     public void run() {
         frame = new JFrame("Visual Novel");
-        frame.setPreferredSize(new Dimension(1015, 800));
+        frame.setPreferredSize(new Dimension(1015, 820));
         
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
   
@@ -38,20 +38,20 @@ public class Kayttoliittyma implements Runnable {
         container.setLayout(new BoxLayout(container, BoxLayout.Y_AXIS));
         
         JPanel kuva = new JPanel();
-        kuva.setPreferredSize(new Dimension(1000, 500));
-        kuva.setBackground(Color.gray);
+        kuva.setPreferredSize(new Dimension(1000, 600));
+        kuva.setBackground(Color.BLACK);
         container.add(kuva);
         
         JPanel teksti = new JPanel();
-        teksti.setPreferredSize(new Dimension(1000, 300));
-        teksti.setBackground(Color.DARK_GRAY);
+        teksti.setPreferredSize(new Dimension(1000, 200));
+        teksti.setBackground(Color.LIGHT_GRAY);
         container.add(teksti);
         
         JTextArea tarina = new JTextArea("");
         tarina.setEditable(false);
-        tarina.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 20));
-        tarina.setPreferredSize(new Dimension(1000, 200));
-        tarina.setBackground(Color.white);
+        tarina.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 20));
+        tarina.setPreferredSize(new Dimension(1000, 120));
+        tarina.setBackground(Color.lightGray);
         teksti.add(tarina);
         
         JPanel napit = new JPanel();
@@ -69,6 +69,7 @@ public class Kayttoliittyma implements Runnable {
         
         nappi1.addActionListener(kuuntelija);
         nappi2.addActionListener(kuuntelija);
+        kuuntelija.vaihdaIkkunaa();
     }
     
     public JFrame getFrame() {

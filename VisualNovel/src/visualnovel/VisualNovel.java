@@ -15,9 +15,10 @@ public class VisualNovel {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws FileNotFoundException { //Tervetuloa ötökkäjahtiin...
+    public static void main(String[] args) throws FileNotFoundException {
         Kayttoliittyma kl = new Kayttoliittyma();
         SwingUtilities.invokeLater(kl);
+        
         
     }
 }

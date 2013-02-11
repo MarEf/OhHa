@@ -70,7 +70,6 @@ public class Kayttoliittyma implements Runnable {
         nappi1.addActionListener(kuuntelija);
         nappi2.addActionListener(kuuntelija);
         kuuntelija.vaihdaIkkunaa();
-        frame.repaint();
     }
     
     public JFrame getFrame() {

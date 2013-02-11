@@ -65,11 +65,12 @@ public class Kayttoliittyma implements Runnable {
         nappi2.setEnabled(false);
         napit.add(nappi2);
         
-        Kuuntelija kuuntelija = new Kuuntelija(nappi1, nappi2, tarina);
+        Kuuntelija kuuntelija = new Kuuntelija(nappi1, nappi2, tarina, kuva);
         
         nappi1.addActionListener(kuuntelija);
         nappi2.addActionListener(kuuntelija);
         kuuntelija.vaihdaIkkunaa();
+        frame.repaint();
     }
     
     public JFrame getFrame() {

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Ikkuna2  extends Ikkuna{
     
      public Ikkuna2() {
-        super(2);
+        super(2, "2");
     }
     
     @Override

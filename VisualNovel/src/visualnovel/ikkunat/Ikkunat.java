@@ -25,6 +25,7 @@ public class Ikkunat {
         ikkunat[0][2] = new Ikkuna2();
         ikkunat[0][3] = new Ikkuna3();
         ikkunat[0][4] = new Ikkuna4();
+//        ikkunat[1][1] = new Ikkuna5();
         
     }
 }

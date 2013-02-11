@@ -18,8 +18,9 @@ public abstract class Ikkuna {
     protected int sivunumero;
     protected String kuvanTunnus;
     
-    public Ikkuna(int numero) {
+    public Ikkuna(int numero, String tunnus) {
         this.sivunumero = numero;
+        this.kuvanTunnus = tunnus;
     }
     
     public File haeTeksti() throws FileNotFoundException {
@@ -30,8 +31,14 @@ public abstract class Ikkuna {
     
     public BufferedImage haeKuva() throws IOException {
         
-        BufferedImage kuva;
-        kuva = ImageIO.read(new File("src/visualnovel/ikkunat/kuvat/"+kuvanTunnus+".jpg"));
+        BufferedImage kuva = null;
+        try {
+           kuva = ImageIO.read(new File("src/visualnovel/ikkunat/kuvat/"+kuvanTunnus+".jpg")); 
+        } catch (Exception e){
+            System.out.println("Kuvaa ei löytynyt");
+            e.printStackTrace();
+        }
+        
         
         return kuva;
     }

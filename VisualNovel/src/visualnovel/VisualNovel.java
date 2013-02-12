@@ -1,10 +1,8 @@
 package visualnovel;
 
 import java.io.FileNotFoundException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
-import visualnovel.ikkunat.*;
+import visualnovel.gui.Kayttoliittyma;
 
 /**
  *

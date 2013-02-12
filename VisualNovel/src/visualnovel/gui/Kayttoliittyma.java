@@ -1,5 +1,5 @@
 
-package visualnovel;
+package visualnovel.gui;
 
 import javax.swing.*;
 import java.awt.*;
@@ -37,21 +37,25 @@ public class Kayttoliittyma implements Runnable {
     private void luoKomponentit(Container container) {
         container.setLayout(new BoxLayout(container, BoxLayout.Y_AXIS));
         
-        JPanel kuva = new JPanel();
-        kuva.setPreferredSize(new Dimension(1000, 600));
-        kuva.setBackground(Color.BLACK);
-        container.add(kuva);
+        JPanel kuvakehys = new JPanel();
+        kuvakehys.setPreferredSize(new Dimension(1015, 610));
+        kuvakehys.setBackground(Color.BLACK);
+        container.add(kuvakehys);
+        
+        JLabel kuva = new JLabel();
+        kuvakehys.add(kuva);
         
         JPanel teksti = new JPanel();
         teksti.setPreferredSize(new Dimension(1000, 200));
-        teksti.setBackground(Color.LIGHT_GRAY);
+        teksti.setBackground(Color.BLACK);
         container.add(teksti);
         
         JTextArea tarina = new JTextArea("");
         tarina.setEditable(false);
         tarina.setFont(new Font(Font.MONOSPACED, Font.PLAIN, 20));
+        tarina.setForeground(Color.WHITE);
         tarina.setPreferredSize(new Dimension(1000, 120));
-        tarina.setBackground(Color.lightGray);
+        tarina.setBackground(Color.BLACK);
         teksti.add(tarina);
         
         JPanel napit = new JPanel();

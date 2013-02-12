@@ -2,13 +2,18 @@ Työn luonteesta johtuen sitä ei voi kovin hyvin testata
 muulla tavalla kuin käsin, käynnistämällä ohjelma, ja tarkistamassa, 
 meneekö jotain pieleen.
 
-Yksikkötestauksena testattiin vai Tekstinkasittelija-luokan toiminta.
-Kaikki muu testaus tapahtui käsin. Ohjelma käynnistettiin, ja katsottiin, 
-näyttikö se oikealta, ja tekikö se, mitä haluttiin. 
+Graagisen käyttöliittymän testaus suoritettiin käsin käynnistämällä
+ohjelma, ja tarkastelemalla ohjelman ulkonäköä, selä navigoinnin toimintaa.
 
 Ohjelman kehityksen aikana törmättiin mm. seuraaviin bugeihin:
 	- Teksti ei tulostunut
+	- Tekstit tulostuivat, mutta väärään paikkaan.
 	- Kuvat eivät näkyneet
 	- Juonenkulkua vaihdettaessa, ja tarinan loppuun mentäessä
 	ajauduttiin Selaajassa silmukkaan, jonka takia alusta aloitettu
 	peli ei edennyt ennen kuin koko ohjelma käynnistettiin uudelleen.
+Nämä kaikki on kuitenkin jo korjattu, ja tällä hetkellä ohjelmassa ei ole
+silmin havaittavia bugeja.
+
+Laajennettaessa bugeja voi kuitenkin tulla, mikäli tiedoston ja/tai kuvan
+nimi kirjataan ohjelmaan väärin.

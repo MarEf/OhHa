@@ -8,6 +8,9 @@ import java.util.ArrayList;
  */
 public class IkkunaIntro extends Ikkuna {
 
+    /**
+     *
+     */
     public IkkunaIntro() {
         super(0, "intro");
     }

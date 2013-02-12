@@ -9,6 +9,9 @@ import java.util.ArrayList;
  */
 public class Ikkuna3 extends Ikkuna{
 
+    /**
+     *
+     */
     public Ikkuna3() {
         super(3, "3");
     }

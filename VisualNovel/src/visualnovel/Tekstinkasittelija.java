@@ -11,9 +11,17 @@ import java.util.Scanner;
  */
 public class Tekstinkasittelija {
 
+    /**
+     *
+     */
     public Tekstinkasittelija() {
     }
-    
+    /**
+     * 
+     * @param tiedosto
+     * @return Palauttaa parametrina annetun tiedoston sisällön String-oliona.
+     * @throws FileNotFoundException 
+     */
     public String lueTiedosto(File tiedosto) throws FileNotFoundException {
         String teksti = "";
 

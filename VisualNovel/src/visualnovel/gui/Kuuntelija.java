@@ -30,6 +30,13 @@ public class Kuuntelija implements ActionListener{
     private boolean goodEnd = false;
     
 
+    /**
+     *
+     * @param nappi1
+     * @param nappi2
+     * @param tarina
+     * @param kuva
+     */
     public Kuuntelija(JButton nappi1, JButton nappi2, JTextArea tarina, JLabel kuva) {
         this.nappi1 = nappi1;
         this.nappi2 = nappi2;
@@ -37,6 +44,10 @@ public class Kuuntelija implements ActionListener{
         this.kuva = kuva;
     }
 
+    /**
+     *
+     * @param e
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
        if (selaaja.getI()==0 && selaaja.getJ()==0) {
@@ -68,8 +79,7 @@ public class Kuuntelija implements ActionListener{
     }
     
 /**
- *
- * Vaihtaa parhaillaan kehyksessä esitettävää ikkunaa.
+ * Vaihtaa parhaillaan näytettävää ikkunaa.
  */
     public void vaihdaIkkunaa() {
         

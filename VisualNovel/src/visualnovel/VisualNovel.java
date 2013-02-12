@@ -12,6 +12,7 @@ public class VisualNovel {
 
     /**
      * @param args the command line arguments
+     * @throws FileNotFoundException  
      */
     public static void main(String[] args) throws FileNotFoundException {
         Kayttoliittyma kl = new Kayttoliittyma();

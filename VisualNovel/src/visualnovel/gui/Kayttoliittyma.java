@@ -12,9 +12,15 @@ public class Kayttoliittyma implements Runnable {
 
     private JFrame frame;
 
+    /**
+     *
+     */
     public Kayttoliittyma() {
     }
     
+    /**
+     *
+     */
     @Override
     public void run() {
         frame = new JFrame("Visual Novel");
@@ -30,8 +36,8 @@ public class Kayttoliittyma implements Runnable {
     }
     
 /**
- *
- * Luo tarvittavat komponentit ja lisää ne kehykseen.
+ * Metodi luo tarvittavat komponentit ja lisää ne kehykseen.
+ * @param container 
  */
     private void luoKomponentit(Container container) {
         container.setLayout(new BoxLayout(container, BoxLayout.Y_AXIS));
@@ -75,6 +81,10 @@ public class Kayttoliittyma implements Runnable {
         kuuntelija.vaihdaIkkunaa();
     }
     
+    /**
+     *
+     * @return
+     */
     public JFrame getFrame() {
         return frame;
     }

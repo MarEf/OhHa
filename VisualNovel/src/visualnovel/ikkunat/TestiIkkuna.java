@@ -11,6 +11,9 @@ import java.util.ArrayList;
  */
 public class TestiIkkuna extends Ikkuna{
 
+    /**
+     *
+     */
     public TestiIkkuna() {
         super(800, "abc");
     }

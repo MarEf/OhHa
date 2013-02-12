@@ -17,17 +17,31 @@ public abstract class Ikkuna {
     protected int sivunumero;
     protected String kuvanTunnus;
     
+    /**
+     *
+     * @param numero
+     * @param tunnus
+     */
     public Ikkuna(int numero, String tunnus) {
         this.sivunumero = numero;
         this.kuvanTunnus = tunnus;
     }
     
+    /**
+     *
+     * @return
+     * @throws FileNotFoundException
+     */
     public File haeTeksti() throws FileNotFoundException {
         File teksti = new File("src/visualnovel/ikkunat/tekstit/"+sivunumero+".txt");
         
         return teksti;
     }
     
+    /**
+     *
+     * @return
+     */
     public BufferedImage haeKuva() {
         
         BufferedImage kuva = null;
@@ -42,17 +56,26 @@ public abstract class Ikkuna {
         return kuva;
     }
 
-    public int getSivunumero() {
-        return sivunumero;
-    }
-
-    public String getKuvanTunnus() {
-        return kuvanTunnus;
-    }
     /**
      * 
      * @return Metodi palauttaa listan String-olioita, jotka sijoitetaan toisessa luokassa nappien teksteiksi. 
      */
     public abstract ArrayList<String> seuraavat(); //Minne seuraavaksi voidaan siirtyä
+    
+    /**
+     *
+     * @return
+     */
+    public int getSivunumero() {
+        return sivunumero;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public String getKuvanTunnus() {
+        return kuvanTunnus;
+    }
 
 }

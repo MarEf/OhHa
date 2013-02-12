@@ -1,16 +1,9 @@
 
 package visualnovel.ikkunat;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import java.awt.image.BufferedImage;
 import static org.junit.Assert.*;
+import org.junit.Test;
 
 /**
  *
@@ -21,18 +14,18 @@ public class IkkunaTest {
     public IkkunaTest() {
     }
 
-    
-
     @Test
-    public void eiLataaTiedostoaJotaEiOle(){
+    public void eiLataaKuvaaJotaEiOle(){
         Ikkuna ikkuna = new TestiIkkuna();
-        File tiedosto;
+        BufferedImage kuva;
         try {
-            tiedosto = ikkuna.haeTeksti();
-        } catch (FileNotFoundException ex) {
-            tiedosto = null;
+            kuva = ikkuna.haeKuva();
+        } catch (Exception e) {
+            kuva = null;
         }
         
-        assertEquals(null, tiedosto);
+        assertEquals(null, kuva);
     }
+    
+
 }

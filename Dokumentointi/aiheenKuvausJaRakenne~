@@ -2,6 +2,20 @@ Aihe: Visual Novel -tyylinen tekstiseikkailu
 Käyttäjät: Pelaaja
 Käyttäjän toiminnot:
 	1. Valintojen tekeminen hiirellä klikkaamalla
-	(2. Nimensä antaminen alussa?)
+
+Alustavasti pelille suunnitellaan vain yksi juonenkulku, mutta jos jää aikaa,
+peliä muokataan siten, että pelaajalla on mahdollisuus tehdä valintoja, jotka
+vaikuttavat juonen kulkuun.
+	Allekirjoittanut tekee myös omin käsin kuvia tekstin taustalle, tuomaan
+tarinaan hieman lisää vivahdetta (Välttämätöntä, jotta voidaan puhua visual novelista,
+eikä pelkästä tekstiseikkailusta).
 
 
+Rakenne:
+
+Ohjelmalla on graafinen käyttöliittymä, joka luo kehyksen, ja laittaa sen
+sisälle kaikki tarvittavat paneelit, napit yms. Käyttöliittymä
+on yhteydessä tapahtumakäsittelijään, joka reagoi napin painamiseen
+joko avaamalla seuraavan ikkunan, tai siinä tapauksessa, että tarinassa on jo
+päästy loppuun, vie pelaajan takaisin alkuun.
+	

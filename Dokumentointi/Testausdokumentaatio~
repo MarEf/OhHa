@@ -1,0 +1,14 @@
+Työn luonteesta johtuen sitä ei voi kovin hyvin testata
+muulla tavalla kuin käsin, käynnistämällä ohjelma, ja tarkistamassa, 
+meneekö jotain pieleen.
+
+Yksikkötestauksena testattiin vai Tekstinkasittelija-luokan toiminta.
+Kaikki muu testaus tapahtui käsin. Ohjelma käynnistettiin, ja katsottiin, 
+näyttikö se oikealta, ja tekikö se, mitä haluttiin. 
+
+Ohjelman kehityksen aikana törmättiin mm. seuraaviin bugeihin:
+	- Teksti ei tulostunut
+	- Kuvat eivät näkyneet
+	- Juonenkulkua vaihdettaessa, ja tarinan loppuun mentäessä
+	ajauduttiin Selaajassa silmukkaan, jonka takia alusta aloitettu
+	peli ei edennyt ennen kuin koko ohjelma käynnistettiin uudelleen.

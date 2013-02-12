@@ -1,12 +1,9 @@
 
 package visualnovel.gui;
 
-import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -14,7 +11,6 @@ import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import visualnovel.Selaaja;
 import visualnovel.Tekstinkasittelija;
@@ -70,7 +66,11 @@ public class Kuuntelija implements ActionListener{
         vaihdaIkkunaa();
 
     }
-
+    
+/**
+ *
+ * Vaihtaa parhaillaan kehyksessä esitettävää ikkunaa.
+ */
     public void vaihdaIkkunaa() {
         
         Ikkuna ikkuna = selaaja.palautaIkkuna();
@@ -80,14 +80,10 @@ public class Kuuntelija implements ActionListener{
         tarina.setText(kasittelija.lueTiedosto(ikkuna.haeTeksti()));
             } catch(Exception e) {
             }
-        try {
             Image lisattava = ikkuna.haeKuva();
             
             kuva.setIcon(new ImageIcon(lisattava));
-            
-        } catch (IOException ex) {
-            Logger.getLogger(Kuuntelija.class.getName()).log(Level.SEVERE, null, ex);
-        }
+ 
         
         ArrayList<String> seuraavat = ikkuna.seuraavat();
         

@@ -1,13 +1,8 @@
 
 package visualnovel.gui;
 
-import javax.swing.*;
 import java.awt.*;
-import java.io.FileNotFoundException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.border.Border;
-import visualnovel.ikkunat.*;
+import javax.swing.*;
 
 /**
  *
@@ -34,6 +29,10 @@ public class Kayttoliittyma implements Runnable {
         
     }
     
+/**
+ *
+ * Luo tarvittavat komponentit ja lisää ne kehykseen.
+ */
     private void luoKomponentit(Container container) {
         container.setLayout(new BoxLayout(container, BoxLayout.Y_AXIS));
         

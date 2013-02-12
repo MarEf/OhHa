@@ -1,7 +1,6 @@
 
 package visualnovel.ikkunat;
 
-import java.awt.*;
 import java.awt.image.*;
 import java.io.*;
 import java.util.ArrayList;
@@ -29,7 +28,7 @@ public abstract class Ikkuna {
         return teksti;
     }
     
-    public BufferedImage haeKuva() throws IOException {
+    public BufferedImage haeKuva() {
         
         BufferedImage kuva = null;
         try {
@@ -42,7 +41,18 @@ public abstract class Ikkuna {
         
         return kuva;
     }
-    
+
+    public int getSivunumero() {
+        return sivunumero;
+    }
+
+    public String getKuvanTunnus() {
+        return kuvanTunnus;
+    }
+    /**
+     * 
+     * @return Metodi palauttaa listan String-olioita, jotka sijoitetaan toisessa luokassa nappien teksteiksi. 
+     */
     public abstract ArrayList<String> seuraavat(); //Minne seuraavaksi voidaan siirtyä
 
 }

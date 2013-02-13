@@ -12,7 +12,7 @@ import javax.imageio.ImageIO;
  * 
  * @author maef
  */
-public abstract class Ikkuna {
+public class Ikkuna {
     
     protected int sivunumero;
     protected String kuvanTunnus;
@@ -58,10 +58,13 @@ public abstract class Ikkuna {
 
     /**
      * 
-     * @return Metodi palauttaa listan String-olioita, jotka sijoitetaan toisessa luokassa nappien teksteiksi. 
+     * @return Metodi hakee ja palauttaa listan String-olioita, jotka sijoitetaan toisessa luokassa nappien teksteiksi. 
      */
-    public abstract ArrayList<String> seuraavat(); //Minne seuraavaksi voidaan siirtyä
+    public ArrayList<String> seuraavat() { //Minne seuraavaksi voidaan siirtyä
     
+        Vaihtoehdot vaihtoehdot = new Vaihtoehdot(sivunumero);
+        return vaihtoehdot.palautaVaihtoehdot();
+    }
     /**
      *
      * @return

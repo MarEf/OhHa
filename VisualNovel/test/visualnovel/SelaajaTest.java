@@ -77,7 +77,7 @@ public class SelaajaTest {
         selaaja.setI(0);
         selaaja.setJ(1);
         
-        Ikkuna exp = new Ikkuna1();
+        Ikkuna exp = new Ikkuna(1, "1");
         assertEquals(exp.seuraavat(), selaaja.palautaIkkuna().seuraavat());
     }
 }

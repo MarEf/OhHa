@@ -41,13 +41,29 @@ public class Vaihtoehdot {
         ArrayList<String> c = new ArrayList<>();
         c.add(">>");
         vaihtoehdot.add(c);
-        
-        ArrayList<String> d = new ArrayList<>();
-        d.add(">>");
-        vaihtoehdot.add(d);
+
+        vaihtoehdot.add(c);
         
         ArrayList<String> e = new ArrayList<>();
         e.add("Aloita alusta");
         vaihtoehdot.add(e);
+        
+        ArrayList<String> f = new ArrayList<>();
+        f.add("Kiitos Mari! Ystävän kanssa on aina helpompaa.");
+        f.add("Pärjään kyllä. Kiitos kuitenkin! (Nousee ylös ja lähtee kotiin)");
+        vaihtoehdot.add(f);
+        
+        vaihtoehdot.add(c);
+        
+        vaihtoehdot.add(c);
+        
+        vaihtoehdot.add(c);
+        
+        vaihtoehdot.add(e);
+        
+        vaihtoehdot.add(c);
+        
+        vaihtoehdot.add(e);
+        
     }
 }

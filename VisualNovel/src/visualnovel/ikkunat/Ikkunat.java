@@ -33,7 +33,13 @@ public class Ikkunat {
         ikkunat[0][2] = new Ikkuna(2, "2");
         ikkunat[0][3] = new Ikkuna(3, "3");
         ikkunat[0][4] = new Ikkuna(4, "4");
-//        ikkunat[1][1] = new Ikkuna5();
+        ikkunat[1][1] = new Ikkuna(5, "5");
+        ikkunat[2][1] = new Ikkuna(6, "6");
+        ikkunat[3][1] = new Ikkuna(7, "7");
+        ikkunat[4][1] = new Ikkuna(8, "8");
+        ikkunat[5][1] = new Ikkuna(9, "9");
+        ikkunat[1][2] = new Ikkuna(10, "10");
+        ikkunat[1][3] = new Ikkuna(11, "11");
         
     }
 }

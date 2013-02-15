@@ -22,4 +22,7 @@ päästy loppuun, vie pelaajan takaisin alkuun.
 ikkunan), joka sisältää Ikkunat-luokan (tähän luokkaan on tallennettu kaikki Ikkuna-oliot 
 taulukkoon), sekä tekstinkäsittelijä, joka muuttaa saamansa file-tiedoston String- olioksi.
 	Ikkuna-oliot on tallennettu Ikkunat-luokkaan. Jokaiselle ikkunalle on nimitetty kuva- 
-ja tekstitiedosto asianmukaisesta pakkauksesta.
+ja tekstitiedosto asianmukaisesta pakkauksesta. Ikkuna-oliot ovat lisäksi yhteydessä Vaihtoehdot-
+luokkaan, joka sisältää nappeihin laitettavat tekstit listoina listan sisällä. Vaihtoehtoja
+navigoidaan indekseillä (sivunumero = listan indeksi, josta nappitekstit sisältävä lista
+löytyy).

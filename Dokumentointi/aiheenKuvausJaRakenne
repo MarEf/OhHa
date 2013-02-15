@@ -19,7 +19,7 @@ on yhteydessä tapahtumakäsittelijään, joka reagoi napin painamiseen
 joko avaamalla seuraavan ikkunan, tai siinä tapauksessa, että tarinassa on jo
 päästy loppuun, vie pelaajan takaisin alkuun.
 	Kuuntelijalla on apunaan Selaaja (muuttaa sivunumeroa ja palauttaa senhetkisen 
-ikkunan), joka sisältää Ikkunat-luokan (tähän luokkaan on tallennettu kaikki Ikkuna-luokat 
+ikkunan), joka sisältää Ikkunat-luokan (tähän luokkaan on tallennettu kaikki Ikkuna-oliot 
 taulukkoon), sekä tekstinkäsittelijä, joka muuttaa saamansa file-tiedoston String- olioksi.
-	Yksittäiset, numeroidut Ikkuna-luokat on tallennettu Ikkunat-luokkaan. Jokaiselle
-ikkunalle on nimitetty kuva- ja tekstitiedosto asianmukaisesta pakkauksesta.
+	Ikkuna-oliot on tallennettu Ikkunat-luokkaan. Jokaiselle ikkunalle on nimitetty kuva- 
+ja tekstitiedosto asianmukaisesta pakkauksesta.
